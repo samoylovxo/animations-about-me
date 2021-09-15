@@ -1,0 +1,22 @@
+.stepOne {
+    height: 100vh;
+    transition: opacity 0.3s;
+}
+
+.content {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 100%;
+    max-width: 700px;
+    transition: all 0.3s;
+}
+
+.cube {
+    width: 300px;
+    height: 300px;
+    transform: rotate(70deg);
+    position: fixed;
+    right: -10%;
+    bottom: 50%;
+}

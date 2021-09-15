@@ -1,0 +1,52 @@
+.root {
+    height: calc(100vh - 67px);
+}
+
+.welcome {
+}
+
+@keyframes spin-left {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(330deg);
+    }
+}
+
+@keyframes spin-right {
+    from {
+        transform: rotate(340deg);
+    }
+    to {
+        transform: rotate(-20deg);
+    }
+}
+
+img {
+    position: absolute;
+}
+
+.cubeBlue {
+    animation: spin-left 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    width: 200px;
+    height: 200px;
+    top: 5%;
+    left: 15%;
+}
+
+.cubeOrange {
+    animation: spin-right 2s cubic-bezier(0.76, -0.42, 0, 1.32) infinite;
+    width: 120px;
+    height: 120px;
+    top: 25%;
+    right: 23%;
+}
+
+.cubeGreen {
+    animation: spin-left 9s linear infinite;
+    width: 75px;
+    height: 75px;
+    top: 75%;
+    left: 40%;
+}

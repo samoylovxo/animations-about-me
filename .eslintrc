@@ -1,0 +1,45 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".ts", ".tsx"]
+      }
+    }
+  },
+  "globals": {
+    "document": true,
+    "navigator": true,
+    "cy": true,
+    "fetch": true,
+    "requestAnimationFrame": true,
+    "cancelAnimationFrame": true,
+    "window": true
+  },
+  "rules": {
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "no-param-reassign": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": "off",
+    "no-use-before-define": "off",
+    "no-plusplus": 0,
+    "import/prefer-default-export": 0,
+    "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": false }],
+    "no-useless-constructor": "off",
+    "react/jsx-props-no-spreading": 0,
+    "import/extensions": 0,
+    "react/prop-types": 0,
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx", ".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off"
+  },
+  "plugins": ["prettier", "react-hooks"]
+}

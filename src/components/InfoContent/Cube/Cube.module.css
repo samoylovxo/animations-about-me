@@ -1,0 +1,57 @@
+.cubeMainFront,
+.cubeMainBack,
+.cubeMainLeft,
+.cubeMainRight,
+.cubeMainTop,
+.cubeMainBottom {
+    position: absolute;
+    background: transparent;
+    transition: border-color 0.3s;
+    border: 7px solid #d23030;
+}
+
+@keyframes spin-cube {
+    from {
+        transform: rotate3d(1, 1, 1, 880deg);
+    }
+    to {
+        transform: rotate3d(1, 1, 1, -200deg);
+    }
+}
+
+.cubeMainFront,
+.cubeMainBack,
+.cubeMainLeft,
+.cubeMainRight,
+.cubeMainTop,
+.cubeMainBottom {
+    transform-origin: 50% 50% -140px;
+}
+
+.cubeMain {
+    /*animation: spin-cube 30s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;*/
+    animation: spin-cube 15s cubic-bezier(0.56, 0.9, 0.46, 0.99) infinite;
+    position: relative;
+    top: 34%;
+    left: 34%;
+    transform-origin: 0 0 200px;
+    transform-style: preserve-3d;
+    transition: 0.3s linear;
+}
+
+.cubeMainBack {
+    transform:rotateY(90deg);
+}
+.cubeMainLeft {
+    transform:rotateY(-90deg);
+}
+.cubeMainRight {
+    transform:rotateX(90deg);
+}
+.cubeMainTop {
+    transform:rotateX(-90deg);
+}
+.cubeMainBottom {
+    transform:rotateY(180deg);
+}
+
